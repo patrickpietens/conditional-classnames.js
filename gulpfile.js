@@ -21,7 +21,7 @@ gulp.task('default', () => {
 
     const umdOptions = {
         templateName: 'returnExports',
-        exports: (file) => 'conditional-classnames',
+        exports: (file) => '',
     };
 
     const babelOptions = {

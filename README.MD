@@ -10,9 +10,7 @@ $ npm install --save conditional-classnames.js
 ```javascript
 import 'conditional-classnames.js';
 
-const foo = $('#foo');
-const result = (Math.random() * 10) > 10;
-
 // Add the classes when result is higher than 10
-foo.classlist.cond('bar', 'highter-than-ten', result);
+const result = (Math.random() * 10) > 10;
+document.getElementById('#foo').classlist.cond('bar', 'highter-than-ten', result);
 ```
