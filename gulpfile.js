@@ -16,7 +16,7 @@ function onError() {
 const isProduction = process.env.NODE_ENV === 'production';
 
 gulp.task('default', () => {
-    const source = 'src/conditional-classnames.js';
+    const source = 'src/index.js';
     const destination = 'dist';
 
     const umdOptions = {

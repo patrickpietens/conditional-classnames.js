@@ -6,16 +6,13 @@ DOMTokenList.prototype.cond = function(...args) {
     const value = args.pop();
     const tokens = args;
 
-    assert(args.length >= 1, 'length');
-    assert (typeof value === 'boolean', 'boolean');
+    assert(args.length >= 1, 'The cond method accepts 2 or more arguments. Only ${args.length} argument are given.');
+    assert (typeof value === 'boolean', 'The last arguments should be a boolean');
 
-    // Add the token
     if (value) {
         this.add(tokens);
     }
-
-    // Remove the token
-    else if (!value) {
+    else {
         this.remove(tokens);
     }
 }
